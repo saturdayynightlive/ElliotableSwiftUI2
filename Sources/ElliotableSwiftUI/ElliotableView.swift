@@ -256,9 +256,11 @@ struct CourseColumnView: View {
                 
                 let courseHourDiff = CGFloat(courseEndHour - courseStartHour)
                 let endMinuteDiff = (CGFloat(courseEndMinute) / CGFloat(60)) * hourHeight
-                print(courseStartHour, courseStartMinute, courseEndHour, courseEndMinute, startHourDiff, startMinuteDiff, courseHourDiff, endMinuteDiff)
+                
                 VStack {
                     
+                }.onAppear(){
+                    print(courseStartHour, courseStartMinute, courseEndHour, courseEndMinute, startHourDiff, startMinuteDiff, courseHourDiff, endMinuteDiff)
                 }
                 .frame(minWidth: 0,
                        maxWidth: .infinity,
