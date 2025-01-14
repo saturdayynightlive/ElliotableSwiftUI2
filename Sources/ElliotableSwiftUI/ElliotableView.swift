@@ -282,6 +282,7 @@ struct CourseColumnView: View {
                     )
             }
         }
+        Spacer()
     }
 }
 
